@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredoka+One&family=Press+Start+2P&display=swap');
+body{
+  background-image: url(./assets/productivity.png);
+  background-repeat: no-repeat;
+
+}
+.logo{
+  width: 100px;
+  height: 110px;
+}
+.mobile{
+  visibility: hide;
+}
+.productivity{
+  width: 100%;
+  height: 900px;
+  position: absolute;
+}
+.heading{
+  text-align: center;
+  position: relative;
+}
+nav{
+  background-color: #506AD4;
+  height: 100px;
+}
+.containerA,.containerB, .containerC{
+  margin: 40px;
+  margin-left: 100px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  position: relative;
+}
+.containerA{
+  background-color: lawngreen;
+  box-shadow: lawngreen 10px 5px 5px 5px;
+  border: 1px solid lawngreen;
+  color: white;
+}
+.containerB{
+  background-color: lightskyblue;
+  box-shadow: lightskyblue 10px 5px 5px 5px;
+  border: 1px solid lightskyblue;
+  color: white;
+}
+.containerC{
+  background-color: rgb(255, 217, 0);
+  box-shadow: rgb(255, 217, 0) 10px 5px 5px 5px;
+  border: 1px solid rgb(255, 217, 0);
+  color: white;
+}
+.interface{
+  margin-top: -1px;
+  color: white;
+
+}
+.shuffleBtn{
+  border: 1px solid #506AD4 ;
+  background-color: #506AD4;
+  color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 750px;
+  font-family: 'Fredoka One', cursive ;
+  font-size: 25px;
+}
+.shuffleBtn:hover{
+  background-color: lawngreen;
+  border: lawngreen 1px solid;
+  cursor: pointer;
+}
+.carasoule{
+  display: inline-block;
+  background-color: transparent;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+}
+@media screen  and (min-width:280px) and (max-width:540px){
+  .carasoule{
+    display: inline-block;
+    background-color: transparent;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .containerA,.containerB, .containerC{
+    margin: 40px;
+    margin-left: 100px;
+    width: 200px;
+    text-align: center;
+    float: left;
+    border-radius: 20px;
+    position: relative;
+  }
+  .shuffleBtn{
+    border: 1px solid #506AD4 ;
+    background-color: #506AD4;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    font-family: 'Fredoka One', cursive ;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 912px) {
+  
+  .shuffleBtn{
+
+    margin-left: 320px;
+    
+  }
+}
