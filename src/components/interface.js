@@ -111,49 +111,40 @@ export default function Interface(){
    
     return(
 
-        <div className="interface"> 
-          {}  <h1 className="heading">Samsung App Factory Groups</h1>
-          <h2 style={{textAlign:'center'}}>Shuffled Groups</h2>
-          <div className='carasoule'>
-              
-            <div className="containerA">
-                    <h2>The Atoms</h2>
-                    <h3>{Group1[0]} (Scrum Master)</h3>
-                    <h3>{Group1[1]}</h3>
-                    <h3>{Group1[2]}</h3>
-                    <h3>{Group1[3]}</h3>
-                    <h3>{Group1[4]}</h3>
-                    <h3>{Group1[5]}</h3>
+        <main className="interface"> 
+            <section className='wrapper'>
+                <section className='container'>
+                    <h1>The Dev Crew</h1>
+                    <p>{Group2[0]} <strong>Scrum Master</strong></p>
+                    <p>{Group2[1]}</p>
+                    <p>{Group2[2]}</p>
+                    <p>{Group2[3]}</p>
+                    <p>{Group2[4]}</p>
+                    <p>{Group2[5]}</p>
+                </section>
+                <section className='container'>
+                    <h1>The Atoms</h1>
+                    <p>{Group1[0]} <strong>Scrum Master</strong></p>
+                    <p>{Group1[1]}</p>
+                    <p>{Group1[2]}</p>
+                    <p>{Group1[3]}</p>
+                    <p>{Group1[4]}</p>
+                    <p>{Group1[5]}</p>
+                </section>
+                <section className='container'>
+                    <h1>The Techies</h1>
+                    <p>{Group3[0]} <strong>Scrum Master</strong></p>
+                    <p>{Group3[1]}</p>
+                    <p>{Group3[2]}</p>
+                    <p>{Group3[3]}</p>
+                    <p>{Group3[4]}</p>
+                    <p>{Group3[5]}</p>
                     
-                </div>
-                <div className="containerB">
-                    <h2>The Dev Crew</h2>
-                    <h3>{Group3[0]} (Scrum Master)</h3>
-                    <h3>{Group3[1]}</h3>
-                    <h3>{Group3[2]}</h3>
-                    <h3>{Group3[3]}</h3>
-                    <h3>{Group3[4]}</h3>
-                    <h3>{Group3[5]}</h3>
-                </div>
-                <div className="containerC">
-                    <h2>The Techies</h2>
-                    <h3>{Group2[0]} (Scrum Master)</h3>
-                    <h3>{Group2[1]}</h3>
-                    <h3>{Group2[2]}</h3>
-                    <h3>{Group2[3]}</h3>
-                    <h3>{Group2[4]}</h3>
-                    <h3>{Group2[5]}</h3>
-                
-                </div>
-
-          </div>
-        
-            
-                <input type={'submit'} className='shuffleBtn' value='Shuffle' onClick={()=>Shuffle()}/>
-                <CSVLink style={{marginLeft:'20px', color: 'black', fontSize:'13px'}}data={csvData}> Download CSV</CSVLink>
-            
-            
-            
-        </div>
+                </section>
+            </section>
+            <section className='operations'>
+            <CSVLink data={csvData} className='downloadLink'>Download New Groups</CSVLink>
+            </section>
+        </main>
     )
 }
